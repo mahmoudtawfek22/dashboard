@@ -1,3 +1,8 @@
+.dash-cont {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
 .main {
   display: flex;
   gap: 15px;
@@ -53,5 +58,13 @@
 .value {
   font-weight: 700;
   font-size: larger;
+
+}
+
+
+.donat {
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  width: 100%;
 
 }
