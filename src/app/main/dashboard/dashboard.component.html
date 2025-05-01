@@ -1,0 +1,37 @@
+<div class="main">
+  <div
+    class="duration"
+    (click)="getDashboard(0)"
+    [ngClass]="{ active: selectedIndex === 0 }"
+  >
+    <span>current</span>
+  </div>
+  <div
+    class="duration"
+    (click)="getDashboard(1)"
+    [ngClass]="{ active: selectedIndex === 1 }"
+  >
+    <span>Last Shift</span>
+  </div>
+  <div
+    class="duration"
+    (click)="getDashboard(2)"
+    [ngClass]="{ active: selectedIndex === 2 }"
+  >
+    <span>Last Day</span>
+  </div>
+  <div
+    class="duration"
+    (click)="getDashboard(3)"
+    [ngClass]="{ active: selectedIndex === 3 }"
+  >
+    <span>Last Month</span>
+  </div>
+  <div
+    class="duration"
+    (click)="getDashboard(4)"
+    [ngClass]="{ active: selectedIndex === 4 }"
+  >
+    <span>Last Year</span>
+  </div>
+</div>

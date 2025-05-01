@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+
+.duration {
+  border: 1px brown solid;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+
+  span {
+    color: brown
+  }
+
+
+}
+
+.active {
+  background-color: brown;
+
+  span {
+    color: white;
+  }
+}
