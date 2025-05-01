@@ -14,6 +14,7 @@ export class DashboardComponent {
   constructor(private dash: DashboardService) {}
   _unsubscribe$: Subject<boolean> = new Subject();
   selectedIndex: number = 0;
+  kpiCards: any;
   ngOnInit(): void {
     this.getDashboard(0);
   }
@@ -23,8 +24,8 @@ export class DashboardComponent {
     this.dash
       .getDash(duration)
       .pipe(
-        tap((res) => {
-          console.log(res);
+        tap((res: any) => {
+          this.kpiCards = res;
         }),
         takeUntil(this._unsubscribe$)
       )

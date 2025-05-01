@@ -27,3 +27,31 @@
     color: white;
   }
 }
+
+.kpi-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  flex-basis: calc(20% - 30px);
+  border: none;
+  min-width: 150px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  min-height: 157px;
+
+}
+
+.label {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.value {
+  font-weight: 700;
+  font-size: larger;
+
+}

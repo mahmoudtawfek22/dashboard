@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main p-2">
   <div
     class="duration"
     (click)="getDashboard(0)"
@@ -33,5 +33,44 @@
     [ngClass]="{ active: selectedIndex === 4 }"
   >
     <span>Last Year</span>
+  </div>
+</div>
+
+<div class="kpi-cards mt-5 p-4">
+  <div
+    class="card d-flex gap-2 flex-column p-3 justify-content-center align-items-center"
+  >
+    <span class="label">Production</span>
+    <span class="value">{{ kpiCards.count }}</span>
+    <span class="label">metres</span>
+  </div>
+
+  <div
+    class="card d-flex gap-2 flex-column p-3 justify-content-center align-items-center"
+  >
+    <span class="label">avgSpeed</span>
+    <span class="value">{{ kpiCards.avgSpeed }}</span>
+    <span class="label">PRM</span>
+  </div>
+  <div
+    class="card d-flex gap-2 flex-column p-3 justify-content-center align-items-center"
+  >
+    <span class="label">Production Rate</span>
+    <span class="value">{{ kpiCards.prodProductivity_rate }}</span>
+    <span class="label">(m/min)</span>
+  </div>
+  <div
+    class="card d-flex gap-2 flex-column p-3 justify-content-center align-items-center"
+  >
+    <span class="label">Stitches</span>
+    <span class="value">{{ kpiCards.stitches }}</span>
+    <span class="label">/100m</span>
+  </div>
+  <div
+    class="card d-flex gap-2 flex-column p-3 justify-content-center align-items-center"
+  >
+    <span class="label">Production</span>
+    <span class="value">{{ kpiCards.stopsDuration }}</span>
+    <span class="label">(min)</span>
   </div>
 </div>
