@@ -1,5 +1,5 @@
 <div class="dash-cont">
-  <div class="main p-2">
+  <div class="main p-2 flex-wrap">
     <div
       class="duration"
       (click)="getDashboard(0)"
@@ -36,7 +36,7 @@
       <span>Last Year</span>
     </div>
   </div>
-  <ng-container *ngIf="isLoading == false">
+  <ng-container *ngIf="!isLoading">
     <div class="kpi-cards mt-5 p-4">
       <div
         class="card d-flex gap-2 flex-column p-3 justify-content-center align-items-center"
@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <div class="mt-5 d-flex gap-2 px-4">
+    <div class="mt-5 d-flex gap-3 flex-md-nowrap flex-wrap px-4">
       <div class="donat p-3">
         <div style="max-width: 180px; margin: auto">
           <canvas
@@ -107,7 +107,7 @@
       </div>
     </div>
 
-    <div class="my-5 d-flex gap-2 px-4">
+    <div class="my-5 d-flex gap-3 px-4 flex-md-nowrap flex-wrap">
       <div
         class="donat d-flex gap-2 flex-column p-3 justify-content-center align-items-center"
       >
@@ -124,5 +124,5 @@
     </div>
   </ng-container>
 
-  <app-spinner *ngIf="isLoading == true"></app-spinner>
+  <app-spinner *ngIf="isLoading"></app-spinner>
 </div>
